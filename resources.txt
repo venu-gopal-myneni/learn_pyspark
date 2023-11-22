@@ -1,2 +1,6 @@
-https://medium.com/analytics-vidhya/how-does-pyspark-work-step-by-step-with-pictures-c011402ccd57   
+https://medium.com/analytics-vidhya/how-does-pyspark-work-step-by-step-with-pictures-c011402ccd57
+
+Install on Ubuntu : https://phoenixnap.com/kb/install-spark-on-ubuntu
+
+
 

@@ -1,6 +1,9 @@
 
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.getOrCreate()
+spark = SparkSession.builder.master("local[*]") \
+                    .appName('SparkByExamples.com') \
+                    .getOrCreate()
 # root
 #  |-- show_id: string (nullable = true)
 #  |-- type: string (nullable = true)
@@ -16,7 +19,8 @@ spark = SparkSession.builder.getOrCreate()
 #  |-- description: string (nullable = true)
 # 8809
 
-df = spark.read.format("csv").option("header", True).option("inferSchema", True).load(r"data\archive\netflix_titles.csv")
+df = spark.read.format("csv").option("header", True).option("inferSchema", True).load("./data/archive/netflix_titles"
+                                                                                      ".csv")
 
 df.explain()
 df.cache()
@@ -25,3 +29,5 @@ df.explain()
 # get schema
 df.printSchema()
 print(df.schema)
+
+stop = input("Press enter to stop : ")
