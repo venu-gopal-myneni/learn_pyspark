@@ -1,1 +1,21 @@
 https://www.youtube.com/playlist?list=PL-gIUf9e9CCskP6wP-NKRU9VhofMHYjcd
+https://projectnessie.org/try/
+
+CATALOGS
+1) Project Nessie
+2) Hive Metastore
+3) AWS Glue
+
+Copy on write(default) & Merge on Read
+-------------------------------------
+position deletes vs equality deletes
+
+
+Table settings
+---------------------
+parquet vectorization
+write format
+compression format
+clean up metadata files
+column metrics tracking
+object store compatibility
