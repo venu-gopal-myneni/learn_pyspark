@@ -1,0 +1,1 @@
+warehouse_location = "file:///home/venumyneni/personal/projects/learn_pyspark/spark_warehouse/iceberg"

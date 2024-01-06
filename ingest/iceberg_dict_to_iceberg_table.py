@@ -1,9 +1,9 @@
 
 from pyspark.sql import *
 from pyspark import SparkConf
-
+from settings import warehouse_location
 import os
-dev_catalog_loc = "file://" + os.getcwd() + "/spark_warehouse/iceberg"
+dev_catalog_loc = warehouse_location #"file://" + os.path.dirname(os.getcwd()) + "/spark_warehouse/iceberg"
 print(f"DCL : {dev_catalog_loc}")
 conf = SparkConf()
 # we need iceberg libraries and the nessie sql extensions
