@@ -1,1 +1,1 @@
-warehouse_location = "file:///home/venumyneni/personal/projects/learn_pyspark/spark_warehouse/iceberg"
+warehouse_location = "C:/Users/mailv/projects/learn_pyspark/spark_warehouse/iceberg"

@@ -1,10 +1,13 @@
 
+import sys
 from pyspark.sql import *
 from pyspark import SparkConf
-from settings import warehouse_location
+#from settings import warehouse_location
 import os
-dev_catalog_loc = warehouse_location #"file://" + os.path.dirname(os.getcwd()) + "/spark_warehouse/iceberg"
+dev_catalog_loc = "C:/Users/mailv/projects/learn_pyspark/data" #warehouse_location #"file://" + os.path.dirname(os.getcwd()) + "/spark_warehouse/iceberg"
 print(f"DCL : {dev_catalog_loc}")
+os.environ['PYSPARK_PYTHON'] = sys.executable
+os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 conf = SparkConf()
 # we need iceberg libraries and the nessie sql extensions
 #org.apache.iceberg:iceberg-spark-runtime-3.2_2.12:1.4.2
